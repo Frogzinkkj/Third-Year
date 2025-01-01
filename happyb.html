@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 ANOS AGORA!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="photo-gallery swiper-container">
+        <div class="swiper-wrapper" id="swiper-wrapper">
+            <div class="swiper-slide"><img src="Asstss/IMG_20220301_230359_049.jpg" alt="Foto 1"></div>
+            <div class="swiper-slide"><img src="Asstss/IMG_20220422_213201_988.jpg" alt="Foto 2"></div>
+            <div class="swiper-slide"><img src="Asstss/IMG_20230422_195515.jpg" alt="Foto 3"></div>
+            <div class="swiper-slide"><img src="Asstss/IMG_20220414_105846.jpg" alt="Foto 4"></div>
+            <div class="swiper-slide"><img src="Asstss/PXL_20220429_193504355.jpg" alt="Foto 5"></div>
+            <div class="swiper-slide"><img src="Asstss/IMG_20230407_164542.jpg" alt="Foto 6"></div>
+            <div class="swiper-slide"><img src="Asstss/WhatsApp Image 2024-12-31 at 10.29.44 PM.jpeg" alt="Foto 7"></div>
+            <div class="swiper-slide"><img src="Asstss/WhatsApp Image 2024-12-31 at 10.29.43 PM.jpeg" alt="Foto 8"></div>
+            <div class="swiper-slide"><img src="Asstss/IMG_20220319_220137.jpg" alt="Foto 9"></div>
+            <div class="swiper-slide"><img src="Asstss/Screenshot_2023-01-25-01-52-37-705_com.mojang.minecraftpe.jpg" alt="Foto 10"></div>
+        </div>
+        <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper" aria-disabled="false"></div>
+        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper" aria-disabled="false"></div>
+    </div>
+    <canvas id="background"></canvas>
+    <div class ="carta">
+        <h1 class="enfeitado">
+            Hoje completamos três anos juntos pretinha, e a cada dia que passa eu percebo que não poderia estar mais feliz por estar contigo, e então percebo que você é a mulher na qual desejo ao lado por toda minha vida. Eu olho para trás e vejo tudo o que vivemos: os momentos bons, os desafios, e até mesmo os momentos difíceis que só fortaleceram o que sinto por ti! Cada dia ao seu lado é uma prova de que fiz a melhor escolha da minha vida e de que nosso amor é a melhor parte de mim.
+            <br><br>
+            Você é e sempre foi mais do que eu poderia imaginar ou desejar. Sempre sendo minha melhor amiga, meu refúgio e minha inspiração. Eu amo como você transforma até os momentos simples em algo especial, como faz com que eu me sinta completo e especial me bem.
+            <br><br>
+            Esses três anos são só o começo de tudo o que ainda temos para viver. Quero continuar ao seu lado, construindo nossos sonhos, conquistando tudo que esse mundo tem pra oferecer e junto a isso, criando novas memórias inesquecíveis. Quero ser sua base, seu refugio, o seu porto seguro, sempre sempre e sempre.
+            <br><br>
+            Obrigado por ser quem você é, por cuidar de mim, por me ensinar de fato o que é amor. Eu te amo mais do que as palavras conseguem explicar. E eu mal posso esperar pelos nossos próximos aniversários meus bem. E então tudo que me resta é dizer que nosso amor é INEFÁVEL!!!!!
+            <br><br>
+            Feliz três anos, meu amor! ❤️
+        </h1>
+    </div>
+    <div class="content">
+        <h1>Compartilhando momentos há</h1>
+        <div class="contador">
+            <div class="item">
+                <span id="anos">00</span>
+                <p>anos</p>
+            </div>
+            <div class="item">
+                <span id="meses">00</span>
+                <p>meses</p>
+            </div>
+            <div class="item">
+                <span id="dias">00</span>
+                <p>dias</p>
+            </div>
+            <div class="item">
+                <span id="horas">00</span>
+                <p>horas</p>
+            </div>
+            <div class="item">
+                <span id="minutos">00</span>
+                <p>minutos</p>
+            </div>
+            <div class="item">
+                <span id="segundos">00</span>
+                <p>segundos</p>
+            </div>
+        </div>
+        <div class="music-player">
+            <div id="track-name">Nome da Música</div>
+            <div class="progress-container">
+                <span id="current-time">00:00</span>
+                <input type="range" id="progress-bar" value="0" max="100">
+                <span id="duration">00:00</span>
+            </div>
+            <div class="controls">
+                <button id="prev"><img src="Asstss/skip_previous_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Anterior"></button>
+                <button id="play-pause"><img src="Asstss/play_arrow_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Play"></button>
+                <button id="next"><img src="Asstss/skip_next_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Próxima"></button>
+            </div>
+        </div>
+        <footer class="footer">
+            Juntos desde 01 de Janeiro de 2022
+        </footer>
+    </div>
+
+    <script src="contador.js"></script>
+    <script src="background.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="foto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.23.0/dist/date-fns.min.js"></script>
+    <script src="player.js"></script>
+</body>
+</html>

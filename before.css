@@ -1,0 +1,80 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: black;
+  min-height: 100vh;
+  position: relative;  /* Necessário para o fundo dos emojis */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.contador {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.item {
+  background-color: #111;
+  border: 1px solid #333;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.item span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  color: #ccc;
+  font-size: 14px;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.falling-emojis {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;  /* Impede que o fundo interfira com cliques */
+  overflow: hidden;
+}
+.falling-emoji {
+  position: absolute;
+  font-size: 30px;
+  opacity: 0;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 1;
+    transform: translateY(-100px);  /* Começa acima da tela */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh);  /* Cai até a parte inferior da tela */
+  }
+}
